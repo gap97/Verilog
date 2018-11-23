@@ -1,14 +1,14 @@
 # Verilog
 
-
+---
 ## 0. 설명
 Verilog를 이용하여 Entry2를 제어하는 코드입니다. module이 정상적으로 동작하기 위해서 output은 모두 register형으로 선언해주시기 바랍니다.
 
-
+---
 ## 1. Basic Logical Operation
 기본적인 논리연산(AND, OR)을 Verilog로 구현한 코드입니다. 
 
-
+---
 ## 2. Counter
 Entry2의 주파수를 이용하여 원하는 빠르기로 숫자를 세는 코드입니다.
 
@@ -48,6 +48,8 @@ always@(SEL_SEG)
 	endcase
 ````
 Array로 이루어진 7segment를 조절하는 부분입니다. 이 코드의 SEG_SEL의 숫자를 조절하시면 Array중 원하는 7 segment가 작동하게 할 수 있습니다.   
+
+
 실제로 Array로 이루어진 7 segment에 하나의 신호가 가기 때문에 켜져있는 모든 7 segment의 숫자는 동일합니다.  
 만약 다른 '34'처럼 다른 숫자를 각각 할당하고 싶다면, 눈의 잔상효과를 이용하여야 합니다. 그러기 위해서는 켜져있는 7 segment를 매우 빠르게 바꾸어주어야 합니다. 다음은 이 코드 중 그를 구현한 코드입니다.
 
@@ -99,6 +101,9 @@ endmodule
 ### ▸ stopwatch
 위의 코드들을 활용하여 만든 초시계 코드입니다. 60초를 셀 수 있습니다. 가지고 계시는 기계의 주파수에 맞게 CLK_COUNT를 조절하시면 됩니다. 
 
+
+
+---
 ## 3. Application
 난수생성을 이용하여 가위바위보 게임을 할 수 있는 코드입니다.
 ````
